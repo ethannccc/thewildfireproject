@@ -37,10 +37,10 @@ function stickyTransition() {
   if (window.pageYOffset >= sticky) {
     navbar.classList.add("sticky")
     nav.style.top = "8vh";
-    title.style.marginTop = "14rem";
+    title.style.marginTop = "11rem";
   } else {
     navbar.classList.remove("sticky");
     nav.style.top = "15vh";
-    title.style.marginTop = "10rem";
+    title.style.marginTop = "7rem";
   }
 }
