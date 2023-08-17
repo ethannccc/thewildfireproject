@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700&family=Poppins:wght@200;300;400;500;600;700;800&family=Raleway:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700&family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Manrope', sans-serif;
 }
 
 nav {
@@ -92,6 +92,15 @@ header {
   width: 16%;
   margin: 10px;
   cursor: pointer;
+}
+
+.title {
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 60px;
+  margin-top: 4rem;
+  color: white;
 }
 
 /* STICKY FUNCTION */
@@ -186,23 +195,59 @@ header {
 
 /* CONTENT */
 h1 {
-  font-size: 22px;
+  font-size: 28px;
+  margin-bottom: 10px;
 }
 
 p {
+  font-size: 20px;
   font-family: 'Manrope', sans-serif;
   font-weight: 300;
+  margin-bottom: 20px;
+}
+
+ul {
+  font-size: 18px;
 }
 
 .content {
-  margin: 20px 70px 50px 70px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 50px 20px;
+  box-sizing: border-box;
 }
 
-.title {
-  text-align: center;
-  font-family: 'Poppins', sans-serif;
-  font-weight: 600;
-  font-size: 60px;
-  margin-top: 4rem;
-  color: white;
+.content a {
+  color: #81BF84;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.category {
+  margin-bottom: 40px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 20px;
+}
+
+.category li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+.intro {
+  font-size: 30px;
+  font-weight: 400;
+  margin-bottom: 3rem;
+}
+
+.bottom {
+  background-color: rgba(81, 191, 132, 0.9);
+  width: 100%;
+  padding: 5px;
+}
+
+.image {
+  width: 8%;
+  margin-left: 20px;
 }

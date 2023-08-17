@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700&family=Poppins:wght@200;300;400;500;600;700;800&family=Raleway:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700&family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Manrope', sans-serif;
 }
 
 nav {
@@ -16,7 +16,7 @@ nav {
 }
 
 header {
-  height: 50vh;
+  height: 100vh;
   background-color: #333;
   background-image: url("images/forestBackground.jpg");
   background-blend-mode: multiply;
@@ -89,12 +89,30 @@ header {
 }
 
 .logo {
-  width: 18%;
+  width: 16%;
   margin: 10px;
   cursor: pointer;
 }
 
-.content {}
+.title {
+  width: 100%;
+  max-width: 1350px;
+  padding: 50px;
+  margin-left: 4rem;
+  margin-top: 10rem;
+  color: white;
+}
+
+.title h1 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 75px;
+}
+
+.title p {
+  font-size: 35px;
+  font-weight: 300;
+}
 
 /* STICKY FUNCTION */
 .sticky {
@@ -189,14 +207,102 @@ header {
 
 /* CONTENT */
 h1 {
+  font-size: 28px;
+}
+
+p {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+ul {
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.content {
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.content a {
+  color: #81BF84;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.content img {
+  width: 100%;
+  border: 2px solid;
+  border-radius: 2px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1)
+}
+
+.category {
+  padding: 150px;
+}
+
+.category h1 {
+  font-size: 60px;
+  margin-bottom: 15px;
+}
+
+.category li {
+  margin-left: 30px;
+  margin-bottom: 7px;
+}
+
+.category .flex-container {
+  display: flex;
+  align-items: center;
+}
+
+.wrapper {
+  margin-left: -40px;
+  padding-left: 40px;
+  background-color: rgba(81, 191, 132, 0.1);
+}
+
+.wrapper2 {
+  margin-left: -40px;
+  padding-left: 40px;
+  text-align: right;
+}
+
+.bottom {
+  background-color: rgba(81, 191, 132, 0.9);
+  width: 100%;
+  padding: 5px;
+}
+
+.image {
+  width: 8%;
+  margin-left: 20px;
+}
+
+.small {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.big {
+  font-size: 40px;
+  font-weight: 600;
+}
+
+#statement {
+  text-align: center;
+}
+
+#mission {
+  text-align: center;
+  font-weight: 400;
   font-size: 22px;
 }
 
-.title {
-  text-align: center;
-  font-family: 'Poppins', sans-serif;
-  font-weight: 600;
-  font-size: 60px;
-  margin-top: 4rem;
-  color: white;
+#wildfireStart {
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 10px;
 }

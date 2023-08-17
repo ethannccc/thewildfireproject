@@ -23,12 +23,12 @@ const navTransition = () => {
     burger.classList.toggle("toggle");
   });
 }
-
 navTransition();
 
 //STICKY FUNCTION
 window.onscroll = function() { stickyTransition() };
 
+let title = document.querySelector(".title");
 let navbar = document.querySelector("nav");
 let nav = document.querySelector(".links");
 let sticky = navbar.offsetTop;
@@ -37,8 +37,10 @@ function stickyTransition() {
   if (window.pageYOffset >= sticky) {
     navbar.classList.add("sticky")
     nav.style.top = "8vh";
+    title.style.marginTop = "8rem";
   } else {
     navbar.classList.remove("sticky");
     nav.style.top = "15vh";
+    title.style.marginTop = "4rem";
   }
 }
